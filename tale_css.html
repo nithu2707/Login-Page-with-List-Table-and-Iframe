@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<style>
+        table {
+            border-collapse: collapse;
+            width: 600px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        caption {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        thead {
+            background-color: lightblue;
+        }
+
+        tfoot {
+            background-color: lightgreen;
+            font-weight: bold;
+        }
+    </style>
+<body>
+    <table border="2" align="center" >
+        <caption>STUDENT</caption>
+       
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Subject</th>
+            <th>Marks</th>
+        </tr></thead>
+        <tbody>
+        <tr>
+            <th>Nithu</th>
+            <td>SQL</td>
+            <td>95</td>
+        </tr>
+        <tr>
+            <th rowspan="3">Ramya</th>
+            <td>PYTHON</td>
+            <td>99</td>
+        </tr>
+        <tr>
+            <td>HTML</td>
+            <td>99</td>
+        </tr>
+        <tr>
+            <td >JAVA</td>
+            <td>99</td>
+        </tr></tbody>
+        <tfoot>
+        <tr>
+        <th colspan="2">Average Marks</th>
+        <th>98</th>
+        </tr>
+        </tfoot>
+        
+    </table><BR>
+    
+</body>
+</html>
